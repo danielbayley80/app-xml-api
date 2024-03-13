@@ -1,0 +1,128 @@
+{
+      "include": [
+            "src/**/*.ts",
+            "test/**/*.ts"
+      ],
+      "compilerOptions": {
+
+            "baseUrl": ".",
+            "rootDir": "./src",
+            "outDir": "dist",    
+
+            "module": "CommonJS",
+            "target": "ES2020",
+
+            "allowJs": false,
+            "checkJs": false,
+            "strict": true,
+            "strictFunctionTypes": true,
+            "noImplicitReturns": true,
+            "incremental": false,
+
+            "sourceMap": true,
+            "resolveJsonModule": true,
+            "esModuleInterop": true,
+            "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+            "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied `any` type.. */
+            "strictNullChecks": true, /* When type checking, take into account `null` and `undefined`. */
+       
+            "alwaysStrict": true, /* Ensure 'use strict' is always emitted. */
+            "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+            "declaration": true,
+            "declarationDir": "dist/types",
+            "paths": {
+
+              "@dbns/appconfig": [
+                    "./../app-xml-online/Packages/AppConfig/src"
+              ],
+              "@dbns/data": [
+                    "./../app-xml-online/Packages/Data/src"
+              ],
+              "@dbns/captcha": [
+                    "./../app-xml-online/Packages/Captcha/src"
+              ],
+              "@dbns/usermodule": [
+                    "./../app-xml-online/Packages/Users/src"
+              ],
+              "@dbns/cms": [
+                    "./../app-xml-online/Packages/Cms/src"
+              ],
+
+              "@dbns/spider": [
+                    "./../app-xml-online/Packages/Spider/src"
+              ],
+              "@dbns/tokens": [
+                    "./../app-xml-online/Packages/Tokens/src"
+              ],
+              "@dbns/email": [
+                    "./../app-xml-online/Packages/Email/src"
+              ],
+
+              "@dbns/file": [
+                    "./../app-xml-online/Packages/File/src"
+              ] ,
+              "@dbns/users": [
+                    "./../app-xml-online/Packages/Users/src"
+              ]   ,
+              "@dbns/jobs": [
+                    "./../app-xml-online/Packages/Jobs/src"
+              ] ,
+              "@dbns/cache": [
+                    "./../app-xml-online/Packages/Cache/src"
+              ] ,
+              "@dbns/payment": [
+                    "./../app-xml-online/Packages/Payment/src"
+              ] 
+        }
+  }  ,   
+ "references": [
+
+        {
+              "path": "./../app-xml-online/Packages/AppConfig"
+        },            {
+              "path": "./../app-xml-online/Packages/Auth"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Cache"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Captcha"
+        },
+        {
+              "path": "./../app-xml-online/Packages/InputSanitizer"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Data"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Users"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Cms"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Spider"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Tokens"
+        },
+        {
+              "path": "./../app-xml-online/Packages/Email"
+        },
+
+        {
+              "path": "./../app-xml-online/Packages/File"
+        },  
+        {
+              "path": "./../app-xml-online/Packages/Jobs"
+        } ,  
+        {
+              "path": "./../app-xml-online/Packages/Payment"
+        } 
+  ],  
+
+  // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+  //
+  // If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+  // from the referenced tsconfig.json - TypeScript does not merge them in
+}
